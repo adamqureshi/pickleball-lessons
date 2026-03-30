@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Florida Pickleball Lessons | Free Assessment & Pro Matching</title>
+  <title>Florida Pickleball Lessons | Lessons, Pro Matching & Coach Network</title>
   <meta
     name="description"
-    content="Florida pickleball lessons, group classes, and local pro matching. Set up a free assessment or get matched with a pickleball pro in your area."
+    content="Florida pickleball lessons, group classes, local pro matching, and coach sign-up. Set up a free assessment, get matched with a pro, or join our Florida coach network."
   />
   <meta name="theme-color" content="#8aaec7" />
   <style>
@@ -345,6 +345,33 @@
       color: var(--muted);
     }
 
+
+    .provider-cta {
+      margin: 18px 0 0;
+      padding: 18px 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(17, 74, 113, 0.14);
+      box-shadow: 0 8px 18px rgba(17, 74, 113, 0.04);
+      backdrop-filter: blur(8px);
+    }
+
+    .provider-cta p {
+      margin: 0;
+      font-size: 1.06rem;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .provider-cta strong {
+      color: var(--text);
+    }
+
+    .provider-cta a {
+      font-weight: 800;
+      text-underline-offset: 2px;
+    }
+
     .footer {
       margin-top: 20px;
       text-align: center;
@@ -544,6 +571,71 @@
         <p class="small">
           No payment is collected on this form. By submitting, you agree to be
           contacted about a local pickleball pro match in Florida.
+        </p>
+      </form>
+    </section>
+
+    <div class="provider-cta" aria-label="Coach network prompt">
+      <p>
+        <strong>Are you a pickleball coach or trainer in Florida?</strong>
+        <a href="#provider-form">Join our network.</a>
+      </p>
+    </div>
+
+    <section class="card" id="provider-form">
+      <h2>Join Our Florida Coach Network</h2>
+      <p>
+        Are you a pickleball pro, coach, or trainer who wants to get lesson leads in Florida?
+        Send us your name, mobile number, and the Florida areas where you can train.
+      </p>
+
+      <form action="https://formsubmit.co/adamqureshi@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Florida Coach Network Signup" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="lead_type" value="Provider / Coach Network Signup" />
+        <input class="hidden" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+
+        <div class="field">
+          <label for="provider-name">Name</label>
+          <input
+            id="provider-name"
+            name="provider_name"
+            type="text"
+            placeholder="Your full name"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="provider-mobile">Mobile Number</label>
+          <input
+            id="provider-mobile"
+            name="provider_mobile"
+            type="tel"
+            placeholder="Your mobile number"
+            autocomplete="tel"
+            inputmode="tel"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="provider-areas">Where can you teach in Florida?</label>
+          <input
+            id="provider-areas"
+            name="provider_areas"
+            type="text"
+            placeholder="Cities, neighborhoods, or ZIP codes you serve"
+            autocomplete="address-level2"
+            required
+          />
+        </div>
+
+        <button type="submit">Join the Florida Coach Network</button>
+        <p class="small">
+          We will review your info and contact you about joining our network and receiving lesson leads.
         </p>
       </form>
     </section>
